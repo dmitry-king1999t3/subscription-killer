@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data
+*.csv
+*.xlsx
+*.json
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Project-specific
+installer/
+temp/
