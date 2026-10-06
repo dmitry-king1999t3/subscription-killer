@@ -1,4 +1,4 @@
-# 🔪 Subscription-Killer
+# 🔪 Subscription-Killer v1.0.0
 
 > Find forgotten recurring payments in your bank statement and estimate how much money you could save.
 
