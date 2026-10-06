@@ -1,4 +1,4 @@
-# 🔪 Subscription-Killer v1.0.0
+# 🔪 Subscription-Killer
 
 > Find forgotten recurring payments in your bank statement and estimate how much money you could save.
 
@@ -20,7 +20,7 @@
 
 ## What is subscription-killer?
 
-**subscription-killer** is a lightweight tool that scans bank statement CSV files and finds recurring payments that may be subscriptions.
+**subscription-killer** is a lightweight tool that scans bank statement files and finds recurring payments that may be subscriptions.
 
 It runs completely locally on your computer.
 
@@ -59,89 +59,12 @@ Your bank statement stays on your computer and is not uploaded anywhere.
 
 ---
 
-## Run From Source
-
-Clone the repository:
-
-```bash
-git clone https://github.com/dmitry-king1999t3/subscription-killer.git
-cd subscription-killer
-```
-
-Run the scanner:
-
-```bash
-python -m src.subkiller.cli scan statement.csv
-```
-
-The project uses only the Python standard library.
-
----
-
-## Quick Example
-
-Example CSV:
-
-```csv
-date,merchant,amount
-2026-01-01,Netflix,9.99
-2026-02-01,Netflix,9.99
-2026-03-01,Netflix,9.99
-2026-01-05,Spotify,10.99
-2026-02-05,Spotify,10.99
-2026-03-05,Spotify,10.99
-```
-
-Run:
-
-```bash
-python -m src.subkiller.cli scan statement.csv
-```
-
-Example output:
-
-```text
-💸 Found 2 recurring charges
-
-🔄 Netflix                   $9.99/mo
-🔄 Spotify                  $10.99/mo
-
-💰 Potential monthly savings: $20.98
-💰 Potential yearly savings:  $251.76
-```
-
----
-
-## Why?
-
-Subscriptions are easy to forget.
-
-A few small recurring payments can turn into hundreds of dollars per year.
-
-subscription-killer helps you quickly see which payments repeat regularly and estimate how much they cost over time.
-
----
-
-## How It Works
-
-The scanner:
-
-1. Reads transactions from a CSV file.
-2. Groups transactions by merchant and amount.
-3. Compares the dates of repeated transactions.
-4. Looks for recurring payment intervals.
-5. Calculates estimated monthly and yearly costs.
-
-Currently, recurring payments with an average interval of approximately **20–40 days** are detected.
-
----
-
 ## Features
 
 - 🔄 Recurring payment detection
 - 💰 Monthly savings estimation
 - 📅 Yearly savings estimation
-- 📄 CSV bank statement support
+- 📄 Bank statement scanning
 - 🔒 100% local processing
 - 🌐 No server required
 - 📡 No telemetry
@@ -152,34 +75,17 @@ Currently, recurring payments with an average interval of approximately **20–4
 
 ---
 
-## Input Format
+## How It Works
 
-The CSV file should contain the following columns:
+The scanner:
 
-```csv
-date,merchant,amount
-2026-01-01,Netflix,9.99
-2026-02-01,Netflix,9.99
-2026-03-01,Netflix,9.99
-```
+1. Reads transactions from a bank statement.
+2. Groups transactions by merchant and amount.
+3. Compares the dates of repeated transactions.
+4. Looks for recurring payment intervals.
+5. Calculates estimated monthly and yearly costs.
 
-### Required columns
-
-| Column | Description |
-|---|---|
-| `date` | Transaction date |
-| `merchant` | Merchant or service name |
-| `amount` | Transaction amount |
-
-The scanner also accepts `description` instead of `merchant`.
-
-Example:
-
-```csv
-date,description,amount
-2026-01-01,Netflix,9.99
-2026-02-01,Netflix,9.99
-```
+Currently, recurring payments with an average interval of approximately **20–40 days** are detected.
 
 ---
 
@@ -187,11 +93,11 @@ date,description,amount
 
 subscription-killer works with bank statements that can be exported to CSV.
 
-The CSV should contain transaction dates, merchant/description information, and transaction amounts.
+The statement should contain transaction dates, merchant or description information, and transaction amounts.
 
-Different banks may use different column names or date formats, so compatibility may vary.
+Different banks may use different formats, so compatibility may vary.
 
-If your bank uses a different format, you can convert the statement to the supported CSV format before scanning it.
+If your bank uses a different format, the statement may need to be converted to a supported CSV format before scanning.
 
 ---
 
@@ -265,43 +171,6 @@ Contains automated tests for the scanner and savings calculations.
 
 ---
 
-## Running Tests
-
-Run all tests with:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-The tests verify important parts of the subscription detection logic and savings calculations.
-
----
-
-## Development
-
-Clone the repository:
-
-```bash
-git clone https://github.com/dmitry-king1999t3/subscription-killer.git
-cd subscription-killer
-```
-
-Run the scanner:
-
-```bash
-python -m src.subkiller.cli scan statement.csv
-```
-
-Run tests:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-No external Python packages are currently required.
-
----
-
 ## Roadmap
 
 Planned improvements:
@@ -342,7 +211,7 @@ Initial public release.
 Includes:
 
 - Windows installer
-- CSV bank statement scanning
+- Bank statement scanning
 - Recurring payment detection
 - Savings estimation
 - Local processing
