@@ -2,6 +2,10 @@
 
 > Find forgotten subscriptions in your bank statements and discover how much you can save. Runs entirely locally.
 
+## 🖥️ Preview
+
+![subscription-killer dashboard](assets/dashboard.png)
+
 [![Latest Release](https://img.shields.io/github/v/release/dmitry-king1999t3/subscription-killer?style=flat-square)](https://github.com/dmitry-king1999t3/subscription-killer/releases/latest)
 [![License](https://img.shields.io/github/license/dmitry-king1999t3/subscription-killer?style=flat-square)](https://github.com/dmitry-king1999t3/subscription-killer/blob/main/LICENSE)
 [![Windows](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/dmitry-king1999t3/subscription-killer)
@@ -13,12 +17,6 @@
 </a>
 
 Download the latest Windows installer from the Releases page.
-
----
-
-## 🖥️ Preview
-
-![subscription-killer dashboard](assets/dashboard.png)
 
 ---
 
