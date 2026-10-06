@@ -2,6 +2,8 @@
 
 > Find forgotten subscriptions in your bank statements and discover how much you can save. Runs entirely locally.
 
+![subscription-killer dashboard](assets/dashboard.png)
+
 ## Why
 
 People often lose **$30–50 per month** on subscriptions they forgot about:
