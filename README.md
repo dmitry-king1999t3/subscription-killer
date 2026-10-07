@@ -238,7 +238,7 @@ Created by **dmitry-king1999t3**
 
 GitHub:
 
-https://github.com/dmitry-king1999t3 
+https://github.com/dmitry-king1999t3
 
 ---
 
